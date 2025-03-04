@@ -1,0 +1,98 @@
+/* Container Styling */
+.favourites-container {
+  text-align: center;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Heading */
+.favourites-container h2 {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+/* Back Button */
+.favourites-container button {
+  background-color: #ff6666;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: background 0.3s ease;
+}
+
+.favourites-container button:hover {
+  background-color: #e65c5c;
+}
+
+/* Recipe List Grid */
+.recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* Recipe Card */
+.recipe-card {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.recipe-card:hover {
+  transform: scale(1.05);
+}
+
+/* Recipe Image - Ensuring Same Size for All */
+.recipe-card img {
+  width: 100%;
+  height: 200px; /* Fixed height for uniformity */
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Recipe Name */
+.recipe-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Remove Button */
+.remove-btn {
+  background-color: #ff4444;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.remove-btn:hover {
+  background-color: #cc0000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .recipe-list {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+  .recipe-card img {
+      height: 180px; /* Adjusted for smaller screens */
+  }
+}

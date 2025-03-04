@@ -1,0 +1,136 @@
+/* Full-page background */
+body {
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the add recipe form */
+.add-recipe-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(253, 253, 253, 0.9); /* Slightly transparent white */
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Form title */
+.add-recipe-container h2 {
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Input and textarea styling */
+.input-field,
+.textarea-field {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Focus effect */
+.input-field:focus,
+.textarea-field:focus {
+  border-color: #ff6600;
+}
+
+/* Character count */
+small {
+  display: block;
+  text-align: right;
+  color: #777;
+  font-size: 12px;
+  margin-bottom: 10px;
+}
+
+/* Button container - Proper alignment */
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Ensures equal spacing */
+  margin-top: 15px;
+}
+
+/* Buttons - Ensuring Same Size */
+.button-group button {
+  flex: 1; /* Makes both buttons take equal space */
+  max-width: 200px; /* Ensures they don't stretch too much */
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  color: white;
+  text-align: center;
+}
+
+/* Add Recipe Button */
+.add-btn {
+  background: #ff6600;
+}
+
+.add-btn:hover {
+  background: #e65c00;
+}
+
+/* Clear All Button */
+.clear-btn {
+  background: #dc3545;
+}
+
+.clear-btn:hover {
+  background: #c82333;
+}
+
+/* Recipe list container */
+.recipe-list {
+  margin-top: 20px;
+  text-align: left;
+}
+
+/* Recipe items */
+.recipe-item {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-item strong {
+  font-size: 18px;
+  color: #ff6600;
+}
+
+.recipe-item p {
+  font-size: 14px;
+  color: #333;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+  .add-recipe-container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .button-group {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .button-group button {
+    width: 100%;
+    max-width: none;
+  }
+}

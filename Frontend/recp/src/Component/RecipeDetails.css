@@ -1,0 +1,83 @@
+.recipe-details-container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+}
+
+.back-button {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: background 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #e64a19;
+}
+
+.back-button:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(230, 74, 25, 0.8);
+}
+
+.recipe-details-img {
+    width: 100%;
+    max-width: 300px; /* Limits the width */
+    max-height: 200px; /* Limits the height */
+    height: auto; /* Keeps aspect ratio */
+    object-fit: cover; /* Crops the image instead of stretching */
+    border-radius: 10px;
+    margin: 15px auto; /* Centers the image */
+    display: block; /* Ensures proper alignment */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+p {
+    font-size: 16px;
+    color: #333;
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+h2, h3 {
+    color: #444;
+    margin-top: 15px;
+}
+
+ul, ol {
+    text-align: left;
+    padding-left: 20px;
+}
+
+ul li, ol li {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .recipe-details-container {
+        padding: 15px;
+    }
+
+    .back-button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .recipe-details-img {
+        max-width: 280px; /* Makes the image smaller on small screens */
+    }
+}

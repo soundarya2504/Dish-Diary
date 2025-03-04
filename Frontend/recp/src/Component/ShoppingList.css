@@ -1,0 +1,101 @@
+.shopping-container {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8f7; /* Soft light background */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 30px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4caf50; /* Green for title */
+  }
+  
+  .input-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 10px;
+  }
+  
+  .input-field {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .input-field:focus {
+    border-color: #4caf50; /* Focus effect with green border */
+  }
+  
+  .add-btn {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-btn:hover {
+    background-color: #45a049; /* Darker green on hover */
+  }
+  
+  .shopping-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .list-item {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .remove-btn {
+    background-color: transparent;
+    border: none;
+    color: #e74c3c; /* Red color for remove button */
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .remove-btn:hover {
+    color: #c0392b; /* Darker red on hover */
+  }
+  
+  .empty-message {
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
+  .clear-btn {
+    background-color: #e74c3c; /* Red color for clear button */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .clear-btn:hover {
+    background-color: #c0392b; /* Darker red on hover */
+  }
+  
