@@ -1,29 +1,29 @@
-/* Full-page background */
+
 body {
   background-size: cover;
   margin: 0;
   font-family: Arial, sans-serif;
 }
 
-/* Center the add recipe form */
+
 .add-recipe-container {
   max-width: 500px;
   margin: 50px auto;
   padding: 20px;
-  background: rgba(253, 253, 253, 0.9); /* Slightly transparent white */
+  background: rgba(253, 253, 253, 0.9);/
   border-radius: 10px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
-/* Form title */
+
 .add-recipe-container h2 {
   color: #333;
   font-size: 24px;
   margin-bottom: 10px;
 }
 
-/* Input and textarea styling */
+
 .input-field,
 .textarea-field {
   width: 100%;
@@ -37,13 +37,13 @@ body {
   transition: border-color 0.3s ease-in-out;
 }
 
-/* Focus effect */
+
 .input-field:focus,
 .textarea-field:focus {
   border-color: #ff6600;
 }
 
-/* Character count */
+
 small {
   display: block;
   text-align: right;
@@ -52,17 +52,17 @@ small {
   margin-bottom: 10px;
 }
 
-/* Button container - Proper alignment */
+
 .button-group {
   display: flex;
-  justify-content: space-between; /* Ensures equal spacing */
+  justify-content: space-between; 
   margin-top: 15px;
 }
 
-/* Buttons - Ensuring Same Size */
+
 .button-group button {
-  flex: 1; /* Makes both buttons take equal space */
-  max-width: 200px; /* Ensures they don't stretch too much */
+  flex: 1; 
+  max-width: 200px;
   padding: 12px;
   border: none;
   border-radius: 5px;
@@ -74,7 +74,7 @@ small {
   text-align: center;
 }
 
-/* Add Recipe Button */
+
 .add-btn {
   background: #ff6600;
 }
@@ -83,7 +83,7 @@ small {
   background: #e65c00;
 }
 
-/* Clear All Button */
+
 .clear-btn {
   background: #dc3545;
 }
@@ -92,13 +92,12 @@ small {
   background: #c82333;
 }
 
-/* Recipe list container */
+
 .recipe-list {
   margin-top: 20px;
   text-align: left;
 }
 
-/* Recipe items */
 .recipe-item {
   background: rgba(255, 255, 255, 0.9);
   padding: 10px;
@@ -117,7 +116,7 @@ small {
   color: #333;
 }
 
-/* Responsive styling */
+
 @media (max-width: 600px) {
   .add-recipe-container {
     width: 90%;
