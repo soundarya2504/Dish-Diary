@@ -16,7 +16,7 @@ import "./App.css";
 
 const App = () => {
   const [favorites, setFavorites] = useState(() => {
-    return JSON.parse(localStorage.getItem("favorites")) || [];  // ✅ Load from localStorage
+    return JSON.parse(localStorage.getItem("favorites")) || [];  
   });
 
   // Save favorites to localStorage whenever it changes
