@@ -9,7 +9,7 @@ const AddRecipe = () => {
     return JSON.parse(localStorage.getItem("recipes")) || [];
   });
 
-  // Sync recipes with localStorage
+  
   useEffect(() => {
     localStorage.setItem("recipes", JSON.stringify(recipes));
   }, [recipes]);
@@ -25,21 +25,21 @@ const AddRecipe = () => {
     const newRecipe = { title, ingredients, instructions };
     setRecipes([...recipes, newRecipe]);
 
-    // Clear input fields after adding
+
     setTitle("");
     setIngredients("");
     setInstructions("");
   };
 
-  // Clear all input fields & saved recipes
+
   const clearAll = () => {
     setTitle("");
     setIngredients("");
     setInstructions("");
     setRecipes([]); // Clears saved recipes
-    localStorage.removeItem("recipes"); // Clears localStorage
+    localStorage.removeItem("recipes"); 
 
-    // Refocus on the title input field
+  
     setTimeout(() => {
       document.getElementById("recipe-title").focus();
     }, 0);
