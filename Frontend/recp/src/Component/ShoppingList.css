@@ -1,6 +1,6 @@
 .shopping-container {
     font-family: Arial, sans-serif;
-    background-color: #f4f8f7; /* Soft light background */
+    background-color: #f4f8f7;
     padding: 20px;
     border-radius: 10px;
     max-width: 600px;
@@ -12,7 +12,7 @@
   h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #4caf50; /* Green for title */
+    color: #4caf50; 
   }
   
   .input-group {
@@ -32,7 +32,7 @@
   }
   
   .input-field:focus {
-    border-color: #4caf50; /* Focus effect with green border */
+    border-color: #4caf50;
   }
   
   .add-btn {
@@ -47,7 +47,7 @@
   }
   
   .add-btn:hover {
-    background-color: #45a049; /* Darker green on hover */
+    background-color: #45a049; 
   }
   
   .shopping-list {
@@ -69,13 +69,13 @@
   .remove-btn {
     background-color: transparent;
     border: none;
-    color: #e74c3c; /* Red color for remove button */
+    color: #e74c3c; 
     font-size: 1.2rem;
     cursor: pointer;
   }
   
   .remove-btn:hover {
-    color: #c0392b; /* Darker red on hover */
+    color: #c0392b; 
   }
   
   .empty-message {
@@ -84,7 +84,7 @@
   }
   
   .clear-btn {
-    background-color: #e74c3c; /* Red color for clear button */
+    background-color: #e74c3c; 
     color: white;
     padding: 10px 20px;
     border-radius: 5px;
@@ -96,6 +96,6 @@
   }
   
   .clear-btn:hover {
-    background-color: #c0392b; /* Darker red on hover */
+    background-color: #c0392b; 
   }
   
