@@ -2,20 +2,20 @@ import React, { useState, useEffect } from "react";
 import "./ShoppingList.css";
 
 const ShoppingList = () => {
-  // Load saved items from localStorage or default to an empty array
+
   const [items, setItems] = useState(() => JSON.parse(localStorage.getItem("shoppingList")) || []);
   const [newItem, setNewItem] = useState("");
   const [quantity, setQuantity] = useState("");
 
-  // Save items to localStorage when the list updates
+ 
   useEffect(() => {
     localStorage.setItem("shoppingList", JSON.stringify(items));
   }, [items]);
 
-  // Add a new item to the list
+  
   const addItem = () => {
     if (!newItem.trim() || !quantity.trim()) {
-      alert("Please enter both item name and quantity! 🛒");
+      alert("Please enter both item name and quantity! ");
       return;
     }
     setItems([...items, { name: newItem, quantity }]);
@@ -23,12 +23,12 @@ const ShoppingList = () => {
     setQuantity("");
   };
 
-  // Remove an item from the list
+ 
   const removeItem = (index) => {
     setItems(items.filter((_, i) => i !== index));
   };
 
-  // Clear the entire shopping list
+
   const clearList = () => {
     if (items.length === 0) return;
     if (window.confirm("Are you sure you want to clear the entire shopping list? 🗑")) {
