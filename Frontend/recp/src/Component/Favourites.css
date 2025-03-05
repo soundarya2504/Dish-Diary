@@ -1,4 +1,4 @@
-/* Container Styling */
+
 .favourites-container {
   text-align: center;
   padding: 20px;
@@ -6,14 +6,14 @@
   margin: 0 auto;
 }
 
-/* Heading */
+
 .favourites-container h2 {
   font-size: 26px;
   color: #333;
   margin-bottom: 15px;
 }
 
-/* Back Button */
+
 .favourites-container button {
   background-color: #ff6666;
   color: white;
@@ -30,7 +30,7 @@
   background-color: #e65c5c;
 }
 
-/* Recipe List Grid */
+
 .recipe-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -39,7 +39,7 @@
   padding: 20px;
 }
 
-/* Recipe Card */
+
 .recipe-card {
   background: white;
   border-radius: 10px;
@@ -54,23 +54,23 @@
   transform: scale(1.05);
 }
 
-/* Recipe Image - Ensuring Same Size for All */
+
 .recipe-card img {
   width: 100%;
-  height: 200px; /* Fixed height for uniformity */
+  height: 200px;
   object-fit: cover;
   border-radius: 10px;
   cursor: pointer;
 }
 
-/* Recipe Name */
+
 .recipe-card h3 {
   margin: 10px 0;
   font-size: 18px;
   color: #333;
 }
 
-/* Remove Button */
+
 .remove-btn {
   background-color: #ff4444;
   color: white;
@@ -86,13 +86,13 @@
   background-color: #cc0000;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .recipe-list {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 
   .recipe-card img {
-      height: 180px; /* Adjusted for smaller screens */
+      height: 180px; 
   }
 }
