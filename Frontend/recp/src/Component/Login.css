@@ -1,4 +1,4 @@
-/* Center the login container */
+
 .login-container {
   display: flex;
   justify-content: center;
@@ -7,7 +7,7 @@
   background: linear-gradient(to right, #fff0e8, #ffe9ea);
 }
 
-/* Card styling */
+
 .login-card {
   width: 350px;
   padding: 20px;
@@ -17,20 +17,20 @@
   text-align: center;
 }
 
-/* Login title */
+
 .login-card h2 {
   font-size: 24px;
   color: #333;
   margin-bottom: 15px;
 }
 
-/* Form styling */
+
 .form-group {
   margin-bottom: 15px;
   text-align: left;
 }
 
-/* Input fields */
+
 .form-group input {
   width: 100%;
   padding: 10px;
@@ -41,12 +41,12 @@
   transition: border 0.3s ease-in-out;
 }
 
-/* Input focus effect */
+
 .form-group input:focus {
   border-color: #ff5e62;
 }
 
-/* Login button */
+
 .login-btn {
   width: 100%;
   padding: 12px;
@@ -64,7 +64,6 @@
   background: #e04b50;
 }
 
-/* Signup link */
 .signup-link {
   margin-top: 10px;
   font-size: 14px;
@@ -80,7 +79,7 @@
   text-decoration: underline;
 }
 
-/* Responsive styling */
+
 @media (max-width: 400px) {
   .login-card {
     width: 90%;
