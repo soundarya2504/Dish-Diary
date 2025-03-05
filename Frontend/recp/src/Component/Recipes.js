@@ -105,7 +105,7 @@ const Recipes = ({ setFavorites }) => {
   const addToFavorites = (recipe) => {
     setFavorites((prevFavorites) => {
       const updatedFavorites = [...prevFavorites, recipe];
-      localStorage.setItem("favorites", JSON.stringify(updatedFavorites)); // ✅ Store in localStorage
+      localStorage.setItem("favorites", JSON.stringify(updatedFavorites)); 
       return updatedFavorites;
     });
   };
