@@ -1,27 +1,3 @@
-/*import React from 'react';
-import { Link } from 'react-router-dom';
-import './Favourites.css';
-
-const Favourites = ({ favourites }) => {
-  return (
-    <div className="favourites">
-      <h2>Your Favorite Recipes</h2>
-      <div className="favourite-list">
-        {favourites.map((recipe) => (
-          <div key={recipe.id} className="favourite-box">
-            <img src={recipe.image} alt={recipe.name} />
-            <h3>{recipe.name}</h3>
-            <p>{recipe.category}</p>
-          </div>
-        ))}
-      </div>
-      <Link to="/" className="back-link">Back to Recipes</Link>
-    </div>
-  );
-};
-
-export default Favourites;*/
-
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import './Favourites.css';
@@ -32,7 +8,7 @@ const Favourites = ({ favorites, setFavorites }) => {
   const removeFromFavourites = (id) => {
     const updatedFavourites = favorites.filter((recipe) => recipe.id !== id);
     setFavorites(updatedFavourites); // Corrected variable name
-    localStorage.setItem("favorites", JSON.stringify(updatedFavourites)); // Update localStorage
+    localStorage.setItem("favorites", JSON.stringify(updatedFavourites)); 
   };
 
   return (
